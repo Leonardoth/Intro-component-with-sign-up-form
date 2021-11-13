@@ -1,4 +1,6 @@
-project: https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1
+[Instruções/Instructions](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1)
+
+[Resultado/Result)(https://leonardoth.github.io/Intro-component-with-sign-up-form/)
 
 Brief
 ### Your users should be able to:
