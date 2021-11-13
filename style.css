@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%) ;
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    --default-font-size: 16px;
+    --default-font-family:'Poppins', sans-serif;
+    --font-light: 400;
+    --font-regular: 500;
+    --font-bold: 600;
+    --font-bolder: 700;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: var(--default-font-size);
+    font-family: var(--default-font-family);
+    text-align: center;
+    background: url(images/bg-intro-mobile.png);
+    background-color: var(--Red);
+    color: white;
+}
+.main__container{
+    margin: auto;
+}
+.first__div,
+.second__div{
+    margin: auto;
+    margin-top: 50px;
+    width: 330px;
+}
+.first__div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.first__div h1{
+    margin: auto;
+    padding: 20px;
+    font-size: 26px;
+}
+.first__div p{
+    margin: auto;
+    text-align: center;
+    font-weight: var(--font-regular);
+    box-sizing: border-box;
+}
+
+.purple_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Blue);
+    height: 80px;
+    min-width: 100%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.purple_box,
+form,
+.form__button{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.233);
+}
+
+.purple_box span{
+    display: block;
+    width: 70%;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+}
+.form__div{
+    position: relative;
+    margin: 10px;
+    height: 60px;
+    box-sizing: border-box;
+    width: 90%;
+}
+.error_message{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    line-height: 0px;
+    display: none;
+    width: auto;
+    margin-bottom: 0px;
+    color: var(--Red);
+    font-weight: var(--font-bold);
+}
+.error_icon{
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: 5px;
+}
+.invalid  + .error_icon + .error_message,
+.invalid + .error_icon{
+    display:block;
+}
+form input{
+    font-size: var(--default-font-size);
+    height: 50px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: var(--font-bold);
+}
+
+form input::placeholder{
+    color:gray;
+}
+form input.invalid{
+    color: var(--Red);
+}
+.form__button{
+    margin-top: 10px;
+    height: 50px;
+    width: 90%;
+    box-sizing: border-box;
+    border: none;
+    text-transform: uppercase;
+    font-weight: var(--font-bold);
+    background-color: var(--Green);
+    border-radius: 8px;
+    color: white;
+}
+.form__button:hover{
+    cursor: pointer;
+}
+.form__button:active{
+    filter: brightness(120%);
+}
+
+form span{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    color: var(--Grayish-Blue);
+    font-size: 13px;
+}
+
+form span strong{
+    color: var(--Red);
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+@media (min-width: 700px){
+    body{
+        text-align: center;
+        background: url(images/bg-intro-desktop.png);
+        background-color: var(--Red);
+    }
+    .main__container{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-items: space-around;
+    }
+    
+    .first__div{
+        margin: auto !important;
+        width: 500px;
+    }
+
+    .second__div{
+        width: 400px;
+    }
+    .purple_box{
+        height: 50px;
+    }
+    .purple_box span{
+        font-size: 12px;
+        width: 100%;
+    }
+    .form__div{
+        height: 70px;
+        margin: 5px;
+        margin-bottom: 0px;
+    }
+
+    .error_icon{
+        top: 8px;
+    }
+    .form__div input{
+        height: 40px;
+    }
+
+    form span{
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
+
+    .first__div h1,
+    .first__div p{
+        padding-left: 0;
+        text-align: left;
+    }
+    
+}

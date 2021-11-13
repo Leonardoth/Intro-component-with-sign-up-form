@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class='main__container'>
+
+        <div class='first__div'>
+            <h1 class='main__title'>
+                Learn to code by watching others
+            </h1>
+            
+            <p>
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+                but understanding how developers think is invaluable.
+            </p>
+        </div>
+        
+        <div class='second__div'>
+            <div class='purple_box'>
+                <span><strong>Try it free 7 days</strong> then $20/mo. thereafter</span>
+            </div>
+            
+            <form action="">
+                <div class="form__div">
+                    <input type="text" placeholder="First Name" aria-label="First Name" required>
+                    <object class='error_icon' data="images/icon-error.svg"></object>
+                    <span class='error_message'>First Name cannot be empty</span>
+                </div>
+                <div class="form__div">
+                    <input type="text"  placeholder="Last Name" aria-label='Last Name' required>
+                    <object class='error_icon' data="images/icon-error.svg"> </object>
+                    <span class='error_message'>Last Name cannot be empty</span>
+                </div>
+                <div class="form__div">
+                    <input type="email" placeholder="Email Adress" aria-label='Email Adress' required >
+                    <object class='error_icon' data="images/icon-error.svg"> </object>
+                    <span class='error_message'>Looks like this is not an email</span>
+                </div>
+                <div class="form__div">
+                    <input type="password" placeholder='Password' aria-label='Password' required>
+                    <object class='error_icon' data="images/icon-error.svg"> </object>
+                    <span class='error_message'>Password cannot be empty</span>
+                </div>
+                <button class='form__button' onclick='trySubmit()'>Claim your free trial</button>
+                <span class='ToS_message'>By clicking the button, you are agreeing to our <strong>Terms and Services</strong></span>
+            </form>
+        </div>
+    </div>
+        
+        
+        <footer>
+            <p class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://github.com/Leonardoth">Leonardoth</a>.
+            </p>
+        </footer>
+    </body>
+    </html>
